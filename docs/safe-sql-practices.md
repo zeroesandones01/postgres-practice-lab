@@ -15,12 +15,12 @@ BEGIN;
 
 SELECT employee_id, department_id
 FROM employees
-WHERE employee_id = 1003;
+WHERE employee_id = 3;
 
 UPDATE employees
 SET department_id = 3,
     updated_at = NOW()
-WHERE employee_id = 1003;
+WHERE employee_id = 3;
 
 COMMIT;
 ```

@@ -13,9 +13,10 @@ Make sure you already have:
 
 If you still need to create the database itself in pgAdmin:
 
-1. Register/connect to your local PostgreSQL server using an existing maintenance database (such as `postgres`).
-2. Right-click **Databases** > **Create** > **Database...**.
-3. Enter `postgres_practice_lab` and save.
+1. Register your local PostgreSQL server in pgAdmin (if it is not already listed).
+2. Connect to that server using an existing maintenance database (such as `postgres`).
+3. Right-click **Databases** > **Create** > **Database...**.
+4. Enter `postgres_practice_lab` and save.
 
 Or run:
 

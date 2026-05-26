@@ -11,7 +11,13 @@ Make sure you already have:
 3. The username and password for your local PostgreSQL instance.
 4. This repository cloned on your machine so you can open the `.sql` files.
 
-If you still need to create the database itself, you can use a GUI tool to create a new PostgreSQL database named `postgres_practice_lab`, or run:
+If you still need to create the database itself in pgAdmin:
+
+1. Register/connect to your local PostgreSQL server using an existing maintenance database (such as `postgres`).
+2. Right-click **Databases** > **Create** > **Database...**.
+3. Enter `postgres_practice_lab` and save.
+
+Or run:
 
 ```bash
 createdb postgres_practice_lab

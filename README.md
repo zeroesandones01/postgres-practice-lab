@@ -26,7 +26,16 @@ The exercises are intentionally beginner-friendly and use fake sample data only.
 7. Compare with `solutions/`
 8. Review anti-patterns in `bad-examples/`
 
-## Quick Start
+## Getting Started - Choose Your Tool
+
+Both setup methods below create the same `postgres_practice_lab` practice environment. Choose the one that feels most comfortable for you.
+
+- **Option A: Terminal (`psql`)** - Follow [Quick Start (Terminal/psql Method)](#quick-start-terminalpsql-method)
+- **Option B: GUI Tool (`pgAdmin`, `DBeaver`, `DataGrip`, and more)** - Follow the [GUI Setup Guide](docs/gui-setup-guide.md)
+
+## Quick Start (Terminal/psql Method)
+
+> Prefer a GUI? See the [GUI Setup Guide](docs/gui-setup-guide.md).
 
 ### 1) Create local practice database
 

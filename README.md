@@ -82,13 +82,15 @@ Recommended workflow:
 3. Run seed scripts
 4. Complete exercises
 5. Create feature branch
-6. Add answers in `submissions/<your-name>/`
+6. Add answers in `submissions/<your-name>/` using the naming pattern `<department_code>_<employee_last_name>_exerciseNN.sql`
 7. Commit changes
 8. Open Pull Request
 9. Reviewer provides feedback
 10. Merge after approval
 
 Submissions are for learning and mentorship. PRs should simulate real team process.
+
+See `submissions/README.md` for the full submission naming convention.
 
 ### Submission Folder Convention
 
@@ -97,8 +99,8 @@ Example:
 ```text
 submissions/
   sample-user/
-    exercise1.sql
-    exercise2.sql
+    eng_stone_exercise01.sql
+    eng_stone_exercise02.sql
     notes.md
 ```
 

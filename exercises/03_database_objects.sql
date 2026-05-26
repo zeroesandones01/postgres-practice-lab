@@ -1,0 +1,6 @@
+-- Object Exercise 1: Create table project_assignments with PK and FKs to employees/departments.
+-- Object Exercise 2: Add check constraint for allocation_percent between 0 and 100.
+-- Object Exercise 3: Add index on employee_id.
+-- Object Exercise 4: Create sequence for external reference numbers.
+-- Object Exercise 5: Create view for active assignments.
+-- Object Exercise 6: Create function returning assignment count by department.

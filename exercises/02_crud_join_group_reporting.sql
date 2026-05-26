@@ -1,0 +1,8 @@
+-- Exercise 1 (INSERT): Add a new employee in Engineering.
+-- Exercise 2 (UPDATE): Move an employee to a different department safely.
+-- Exercise 3 (DELETE): Remove a transaction record by transaction_id safely.
+-- Exercise 4 (JOIN): List employees and total transaction amount (include employees with no transactions).
+-- Exercise 5 (REPORT): Build monthly transaction summary by type.
+-- Exercise 6 (VIEW): Query vw_department_headcount and explain output columns.
+-- Exercise 7 (FUNCTION): Run fn_department_headcount() and fn_employee_transaction_total(2).
+-- Exercise 8 (PARAMETERIZED): Write a parameterized query for employee lookup by email.

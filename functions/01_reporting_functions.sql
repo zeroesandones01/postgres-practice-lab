@@ -13,8 +13,7 @@ AS $$
     FROM departments AS d
     LEFT JOIN employees AS e
         ON e.department_id = d.department_id
-    GROUP BY d.department_code, d.department_name
-    ORDER BY d.department_name;
+    GROUP BY d.department_code, d.department_name;
 $$;
 
 CREATE OR REPLACE FUNCTION fn_employee_transaction_total(p_employee_id INTEGER)

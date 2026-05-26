@@ -1,0 +1,5 @@
+-- Exercise 1: Return active employees sorted by last name then first name.
+-- Exercise 2: Return employees hired after 2022-01-01 with salary >= 65000.
+-- Exercise 3: Return employees with department names using a JOIN.
+-- Exercise 4: Return top 3 highest salaries.
+-- Exercise 5: Return department-level headcount with GROUP BY.

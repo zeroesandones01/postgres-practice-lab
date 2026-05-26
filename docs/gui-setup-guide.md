@@ -7,51 +7,46 @@ This guide helps you set up the same `postgres_practice_lab` environment using a
 Make sure you already have:
 
 1. PostgreSQL installed and running locally.
-2. A local database named `postgres_practice_lab`.
-3. The username and password for your local PostgreSQL instance.
-4. This repository cloned on your machine so you can open the `.sql` files.
+2. The username and password for your local PostgreSQL instance.
+3. This repository cloned on your machine so you can open the `.sql` files.
 
-If you still need to create the database itself in pgAdmin:
-
-1. Register your local PostgreSQL server in pgAdmin (if it is not already listed).
-2. Connect to that server using an existing maintenance database (such as `postgres`).
-3. Right-click **Databases** > **Create** > **Database...**.
-4. Enter `postgres_practice_lab` and save.
-
-Or run:
-
-```bash
-createdb postgres_practice_lab
-```
+The database `postgres_practice_lab` will be created in the steps below.
 
 ## pgAdmin Setup
 
 pgAdmin is a good beginner-friendly choice because it shows databases, schemas, tables, and query results in a visual interface.
 
-### Connection Details
+### Register Server and Create Database
 
-Use these values when registering your local PostgreSQL server in pgAdmin:
-
-- **Host name/address:** `localhost`
-- **Port:** `5432`
-- **Maintenance database:** `postgres` (an existing database used to establish the connection)
-- **Username:** your local PostgreSQL username (often `postgres`)
-- **Password:** your local PostgreSQL password
-
-After saving, expand the server in the left navigation tree and open **Databases** to find `postgres_practice_lab`.
-
-If your local PostgreSQL installation uses different values, use the ones from your machine.
-
-### Connect to the Database in pgAdmin
+First, register your local PostgreSQL server in pgAdmin (skip this if your server is already listed):
 
 1. Open pgAdmin.
 2. In the left navigation tree, right-click **Servers**.
 3. Select **Register** > **Server...**.
-4. In the **General** tab, enter a name such as `Postgres Practice Lab`.
-5. Open the **Connection** tab.
-6. Enter `localhost` for the host, `5432` for the port, `postgres` for the maintenance database (this is an existing database used to establish the initial connection), and your local PostgreSQL username/password.
-7. Select **Save**.
-8. Expand the new server, then expand **Databases** to confirm that `postgres_practice_lab` is available.
+4. In the **General** tab, enter a name such as `Local PostgreSQL`.
+5. Open the **Connection** tab and enter:
+   - **Host name/address:** `localhost`
+   - **Port:** `5432`
+   - **Maintenance database:** `postgres` (an existing database used to establish the initial connection)
+   - **Username:** your local PostgreSQL username (often `postgres`)
+   - **Password:** your local PostgreSQL password
+6. Select **Save**.
+
+If your local PostgreSQL installation uses different values, use the ones from your machine.
+
+Next, create the `postgres_practice_lab` database:
+
+1. Expand your registered server in the left navigation tree.
+2. Right-click **Databases** > **Create** > **Database...**.
+3. Enter `postgres_practice_lab` as the database name and save.
+
+Alternatively, you can create the database from the terminal:
+
+```bash
+createdb postgres_practice_lab
+```
+
+After creating the database, expand **Databases** in pgAdmin to confirm that `postgres_practice_lab` appears.
 
 ### Open the Query Tool
 

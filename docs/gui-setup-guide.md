@@ -30,13 +30,15 @@ pgAdmin is a good beginner-friendly choice because it shows databases, schemas, 
 
 ### Connection Details
 
-Use these values when connecting to your local practice database:
+Use these values when registering your local PostgreSQL server in pgAdmin:
 
 - **Host name/address:** `localhost`
 - **Port:** `5432`
-- **Maintenance database or database name:** `postgres_practice_lab`
+- **Maintenance database:** `postgres` (an existing database used to establish the connection)
 - **Username:** your local PostgreSQL username (often `postgres`)
 - **Password:** your local PostgreSQL password
+
+After saving, expand the server in the left navigation tree and open **Databases** to find `postgres_practice_lab`.
 
 If your local PostgreSQL installation uses different values, use the ones from your machine.
 
@@ -47,7 +49,7 @@ If your local PostgreSQL installation uses different values, use the ones from y
 3. Select **Register** > **Server...**.
 4. In the **General** tab, enter a name such as `Postgres Practice Lab`.
 5. Open the **Connection** tab.
-6. Enter `localhost` for the host, `5432` for the port, `postgres_practice_lab` for the maintenance database, and your local PostgreSQL username/password.
+6. Enter `localhost` for the host, `5432` for the port, `postgres` for the maintenance database (this is an existing database used to establish the initial connection), and your local PostgreSQL username/password.
 7. Select **Save**.
 8. Expand the new server, then expand **Databases** to confirm that `postgres_practice_lab` is available.
 
